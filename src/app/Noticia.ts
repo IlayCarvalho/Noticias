@@ -1,5 +1,5 @@
 export interface Noticia {
-    id: number;
+    id?: number;
     titulo: string;
     descricao: string;
 }

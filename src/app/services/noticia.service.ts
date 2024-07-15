@@ -12,7 +12,14 @@ export class NoticiaService {
 
   constructor(private http: HttpClient) { }
 
-  public listaNoticia():Observable<Noticia[]> {
+  public listaNoticia(): Observable<Noticia[]> {
     return this.http.get<Noticia[]>(this.url)
+  }
+
+  public buscaNoticia(id: number): Observable<Noticia> {
+
+    const urlp: string = `${this.url}/${id}`
+
+    return this.http.get<Noticia>(urlp)
   }
 }

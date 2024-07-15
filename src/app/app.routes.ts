@@ -4,7 +4,7 @@ import { ListaNoticiaComponent } from './components/lista-noticia/lista-noticia.
 import { ListaNoticiaDetalhesComponent } from './components/lista-noticia-detalhes/lista-noticia-detalhes.component';
 
 export const routes: Routes = [
-    {path: "lista/noticia", component: ListaNoticiaComponent},
+    {path: "", component: ListaNoticiaComponent},
     {path: "criar/noticia", component: CriarNoticiaComponent},
-    {path: "detalhes/noticia", component: ListaNoticiaDetalhesComponent}
+    {path: "detalhes/noticia/:id", component: ListaNoticiaDetalhesComponent}
 ];
