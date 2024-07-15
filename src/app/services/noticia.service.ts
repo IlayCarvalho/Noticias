@@ -26,4 +26,11 @@ export class NoticiaService {
   public criarNoticia(noticia: Noticia): Observable<Noticia> {
     return this.http.post<Noticia>(this.url, noticia)
   }
+
+  public deletarNoticia(id: number) {
+
+    const urld: string = `${this.url}/${id}`
+
+    return this.http.delete<Noticia>(urld)
+  }
 }

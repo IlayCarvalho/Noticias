@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Noticia } from '../../Noticia';
 import { NoticiaService } from '../../services/noticia.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-noticia-detalhes',
@@ -18,14 +18,20 @@ export class ListaNoticiaDetalhesComponent implements OnInit {
     descricao: '',
   }
 
- constructor(private service: NoticiaService, private routes: ActivatedRoute) {}
+ constructor(private service: NoticiaService, private routes: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     const id: number = Number(this.routes.snapshot.paramMap.get("id"))
 
-    console.log(id)
 
     this.service.buscaNoticia(id).subscribe(dado => this.dados = dado)
+ }
+
+ async excluir(id: number) {
+  
+  await this.service.deletarNoticia(id).subscribe(() => {
+    this.router.navigate(["/"])
+  })
  }
 
 }
