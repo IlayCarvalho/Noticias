@@ -33,4 +33,10 @@ export class NoticiaService {
 
     return this.http.delete<Noticia>(urld)
   }
+
+  public atualizarNoticia(id: number, noticia: Noticia) {
+    const urlN: string = `${this.url}/${id}`
+
+    return this.http.put(urlN, noticia)
+  }
 }

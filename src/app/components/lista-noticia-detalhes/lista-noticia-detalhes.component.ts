@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Noticia } from '../../Noticia';
 import { NoticiaService } from '../../services/noticia.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-lista-noticia-detalhes',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink,
+  ],
   templateUrl: './lista-noticia-detalhes.component.html',
   styleUrl: './lista-noticia-detalhes.component.css'
 })

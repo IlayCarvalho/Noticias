@@ -1,0 +1,18 @@
+<form [formGroup]="formAtualizar">
+    <h3>NOVA NOTICIA</h3>
+    <div>
+        <label>Titulo:</label>
+        <input type="text" formControlName="titulo" value="{{dados.titulo}}" required>
+        <div *ngIf="formAtualizar.controls.titulo.invalid">
+            <p>Titulo Obrigatorio*</p>
+        </div>
+    </div>
+    <div>
+        <label>Descrição:</label>
+        <textarea formControlName="descricao" value="{{dados.descricao}}" required></textarea>
+        <div *ngIf="formAtualizar.controls.descricao.invalid">
+            <p>Descrição Obrigatoria*</p>
+        </div>
+    </div>
+    <button (click)="editar()">Editar</button>
+</form>

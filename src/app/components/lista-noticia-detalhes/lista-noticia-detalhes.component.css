@@ -60,3 +60,8 @@ div {
 .btn-ed:hover {
     background-color: #ce9700;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
