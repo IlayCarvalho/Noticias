@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -12,4 +12,7 @@ import { RouterLink } from '@angular/router';
 })
 export class CardNoticiaComponent {
 
+  @Input() id: number = 0;
+  @Input() titulo: string ='';
+  @Input() descricao: string = '';
 }

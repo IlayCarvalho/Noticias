@@ -1,0 +1,61 @@
+:host {
+    width: 100%;
+
+    padding: 10px;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-ex {
+    width: 100px;
+    height: 30px;
+
+    background-color: #d40808;
+    color: #fff;
+
+    border: none;
+
+    font-size: 18px;
+}
+
+.btn-ex:hover {
+    background-color: #fa3434;
+}
+
+.btn-ed {
+    width: 100px;
+    height: 30px;
+
+    background-color: #fab700;
+    color: #fff;
+
+    border: none;
+
+    font-size: 18px;
+}
+
+.btn-ed:hover {
+    background-color: #ce9700;
+}

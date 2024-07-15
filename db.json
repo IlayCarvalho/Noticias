@@ -1,0 +1,29 @@
+{
+    "noticias": [
+        {
+          "id": 1,
+          "titulo": "Objeto 1",
+          "descricao": "Descrição do objeto 1"
+        },
+        {
+          "id": 2,
+          "titulo": "Objeto 2",
+          "descricao": "Descrição do objeto 2"
+        },
+        {
+          "id": 3,
+          "titulo": "Objeto 3",
+          "descricao": "Descrição do objeto 3"
+        },
+        {
+          "id": 4,
+          "titulo": "Objeto 3",
+          "descricao": "Descrição do objeto 3"
+        },
+        {
+          "id": 5,
+          "titulo": "Objeto 3",
+          "descricao": "Descrição do objeto 3"
+        }
+    ]  
+}
