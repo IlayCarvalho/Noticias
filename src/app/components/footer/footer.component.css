@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #a52a2a;
+
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 20px;
+
+    color: #fab700;
+
+    font-weight: 700;
+}
+
+p {
+    margin-right: 20px;
+
+    font-size: 20px;
+
+    color: #fff;
+}
