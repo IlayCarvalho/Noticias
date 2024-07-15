@@ -8,7 +8,7 @@ import { Noticia } from '../Noticia';
 })
 export class NoticiaService {
 
-  protected url: string = "http://localhost:3000/noticias"
+  protected url: string = "http://localhost:8080/api/blog"
 
   constructor(private http: HttpClient) { }
 
@@ -21,5 +21,9 @@ export class NoticiaService {
     const urlp: string = `${this.url}/${id}`
 
     return this.http.get<Noticia>(urlp)
+  }
+
+  public criarNoticia(noticia: Noticia): Observable<Noticia> {
+    return this.http.post<Noticia>(this.url, noticia)
   }
 }

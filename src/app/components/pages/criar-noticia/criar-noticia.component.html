@@ -1,18 +1,18 @@
-<form>
+<form [formGroup]="form">
     <h3>NOVA NOTICIA</h3>
     <div>
         <label>Titulo:</label>
-        <input type="text">
-        <div>
+        <input type="text" formControlName="titulo" required>
+        <div *ngIf="form.controls.titulo.invalid">
             <p>Titulo Obrigatorio*</p>
         </div>
     </div>
     <div>
         <label>Descrição:</label>
-        <input type="text">
-        <div>
+        <textarea formControlName="descricao" required></textarea>
+        <div *ngIf="form.controls.descricao.invalid">
             <p>Descrição Obrigatoria*</p>
         </div>
     </div>
-    <button>Cadastrar</button>
+    <button (click)="cadastrar()" >Cadastrar</button>
 </form>

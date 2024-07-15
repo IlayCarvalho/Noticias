@@ -1,4 +1,6 @@
 :host {
+    height: 80.5vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,4 +72,8 @@ button:hover {
 
 p {
     color: #fab700;
+}
+
+textarea {
+    resize: none;
 }
